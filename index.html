@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Codificando e Decodificando</title>
+</head>
+
+<body>
+    <h1 class="titulo">Mensagens Ocultas</h1>
+    <div>
+        <input type="text" placeholder="Insira a sua mensagem" id="texto" />
+        <p>Selecione um número </p><input type="number" id="incremento">
+    </div>
+    <div>
+        <button class="btn" onclick="codificar()">Codificar</button>
+        <button class="btn" onclick="decodificar()">Decodificar</button>
+    </div>
+     <select id="selecao">
+         <option value="cifracezar">Cifra de Cesar</option>
+         <option value="base64">Base64</option>
+     </select>
+
+    <input type="radio" id="codificado" name="codificar"value="codificado">
+    <label for="codificado">Codificar</label>
+    <input type="radio" id="decodificado" name="codificar"value="decodificado">
+    <label for="decodificado">Decodificar</label>
+     
+   
+      
+       <textarea id="cifrado" name="Texto"></textarea>
+     
+ 
+    <script src="codificardecodificar.js"></script>
+ </body>
+ 
+ </html>
